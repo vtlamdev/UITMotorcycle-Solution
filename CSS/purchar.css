@@ -1,0 +1,102 @@
+@media only screen and (max-width: 991px) {
+  #sidebar.active {
+    min-width: 70px;
+    max-width: 70px;
+  }
+  /* Downsize the navigation links font size */
+  #sidebar.active ul li a {
+    font-size: 0.7em;
+  }
+  #sidebar.active ul ul a {
+    font-size: 0.75em !important;
+  }
+  #content {
+    padding: 2px;
+  }
+  #sidebar.active ul li a i {
+    margin-right: 0;
+    display: block;
+    font-size: 1.6em;
+    margin-bottom: 5px;
+  }
+  .table_content th,
+  .purchar a,
+  .table_content td {
+    font-size: 0.75rem !important;
+  }
+  .table_content img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #sidebar.active {
+    min-width: 60px;
+    max-width: 60px;
+  }
+  /* Downsize the navigation links font size */
+  #sidebar.active ul li a {
+    font-size: 0.7em;
+  }
+  #sidebar.active ul ul a {
+    font-size: 0.6em !important;
+  }
+  #sidebar.active ul li a span {
+    font-size: 0.55rem;
+  }
+  #content {
+    padding: 2px;
+  }
+  #sidebar.active ul li a i {
+    margin-right: 0;
+    display: block;
+    font-size: 1.6em;
+    margin-bottom: 5px;
+  }
+  .table_content th,
+  .purchar a,
+  .table_content td {
+    font-size: 0.62rem !important;
+  }
+  .table_content img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .button_cancel {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #sidebar.active {
+    min-width: 50px;
+    max-width: 50px;
+  }
+  .table_content th,
+  .purchar a,
+  .table_content td {
+    font-size: 0.45rem !important;
+  }
+  .button_cancel {
+    padding: 1px 5px;
+    font-size: 10px;
+    line-height: 1;
+    border-radius: 2px;
+  }
+  /* Downsize the navigation links font size */
+  #sidebar.active ul li a {
+    font-size: 0.55em;
+  }
+  #sidebar.active ul li a span,
+  #sidebar.active ul ul a {
+    font-size: 0.45rem;
+  }
+  #sidebar.active ul li a i {
+    margin-right: 0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 3px;
+  }
+}

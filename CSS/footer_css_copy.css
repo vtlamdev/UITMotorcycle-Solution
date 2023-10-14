@@ -1,0 +1,40 @@
+footer .row {
+  background-color: #05c5cc !important;
+  line-height: 1.5 !important;
+  padding: 30px 15px 20px 15px !important;
+  margin: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 20px !important;
+}
+.col-4 {
+  width: 100% !important;
+}
+.col-4 a,
+.col-4 p {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.col-4 a:hover,
+.col-4 h6 {
+  color: #fee26f !important;
+}
+.ft_horizontal_line {
+  width: 20px !important;
+  border: 2px solid white !important;
+  border-radius: 5px !important;
+  background-color: white !important;
+  margin-bottom: 5px;
+}
+.col-4 h6#ft_cl1_header {
+  font-size: 25px !important;
+}
+.col-4 h6 {
+  font-weight: bold !important;
+}
+
+@media screen and (max-width: 350px) {
+  footer .row {
+    padding: 10px 0 0 0 !important;
+  }
+}

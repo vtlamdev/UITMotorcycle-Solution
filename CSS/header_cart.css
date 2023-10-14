@@ -1,0 +1,143 @@
+.header_cart-list {
+  position: absolute;
+  top: calc(100% + 22px);
+  right: 10px;
+  background-color: white;
+  width: 410px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.header_cart-heading {
+  text-align: left;
+  margin: 12px 0 8px 12px;
+  color: #999;
+  font-weight: 500;
+}
+
+.header_cart-list-item {
+  padding-left: 0;
+  list-style: none;
+}
+
+.header_cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.header_cart-item:hover {
+  background-color: #f8f8f8;
+}
+
+.header_cart-img {
+  width: 60px;
+  height: 60px;
+  margin: 0 12px;
+}
+
+.header_cart-item-info {
+  width: 100%;
+  margin-right: 12px;
+}
+.header_cart-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_cart-item-name {
+  font-size: 1.6rem;
+  font-weight: 550;
+  margin: 0;
+}
+.header_cart-item-price {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.header_cart-item-multiply {
+  font-size: 1rem;
+  margin: 0 2px;
+  color: #757575;
+}
+.header_cart-item-qnt {
+  font-size: 1.2rem;
+  margin: 0 2px;
+  color: #757575;
+}
+.header_cart-item-body {
+  display: flex;
+  justify-content: space-between;
+}
+.header_cart-item-description {
+  color: #757575;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.header_cart-item-remove {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.header_cart-item-remove:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.header_cart-view-cart {
+  margin: 0 auto 0 auto;
+  width: auto;
+  display: flex;
+}
+
+.header_cart-no-cart-img {
+  display: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header_cart-list--no-cart {
+  padding: 28px 0;
+}
+
+.header_cart-list--no-cart .header_cart-no-cart-img {
+  display: block;
+}
+
+.header_cart-list--no-cart .header_cart-heading,
+.header_cart-list--no-cart .header_cart-list-item,
+.header_cart-list--no-cart .header_cart-view-cart-link {
+  display: none;
+}
+
+.header_cart-list::after {
+  content: "";
+  position: absolute;
+  right: 17px;
+  top: -32px;
+  border-width: 20px 26px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+.header_cart {
+  float: right;
+  position: relative;
+}
+.header_cart:hover .header_cart-list {
+  display: block;
+}
+.header_cart:hover .account_giohang {
+  background-color: #1a6985;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 650px) {
+  .header_cart:hover .header_cart-list {
+    display: none;
+  }
+  .header_cart {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+}

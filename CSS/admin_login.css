@@ -1,0 +1,11 @@
+.login-box-body .button_sm {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .login-box-body .button {
+    display: none !important;
+  }
+  .login-box-body .button_sm {
+    display: block;
+  }
+}

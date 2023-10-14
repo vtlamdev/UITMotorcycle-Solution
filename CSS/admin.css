@@ -1,0 +1,53 @@
+.list .nav-link {
+  color: white;
+}
+.list .nav-link:hover {
+  color: cornflowerblue;
+  border-bottom: none;
+}
+.list {
+  border: none !important;
+}
+.admin_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.insert_brand_btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+  margin: 10px 0 !important;
+}
+#products table,
+#brands table,
+#admins table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#products .btn-sm,
+#brands .btn-sm {
+  margin: 5px !important;
+}
+#products table,
+#products th,
+#products td,
+#brands table,
+#brands th,
+#brands td,
+#admins table,
+#admins th,
+#admins td {
+  border: 0.5px solid rgb(237, 235, 235);
+  border-collapse: collapse;
+}
+.edit_content {
+  margin-left: auto;
+  margin-right: auto;
+}

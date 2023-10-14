@@ -1,0 +1,198 @@
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  margin: 20px 0;
+  background-color: rgb(231, 230, 230);
+}
+.container {
+  margin: 15px auto 0 auto !important;
+  border: none !important;
+  padding: 0 !important;
+}
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+#content {
+  width: 100%;
+  padding: 20px 30px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+#sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+  background: #7386d5;
+  color: #fff;
+  transition: all 0.3s;
+}
+#sidebar ul.components {
+  border-bottom: 1px solid #47748b;
+}
+#sidebar ul li a:hover {
+  background-color: #6376ca;
+}
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #6d7fcc;
+}
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+/* Shrinking the sidebar from 250px to 80px and center aligining its content*/
+#sidebar.active {
+  min-width: 100px;
+  max-width: 100px;
+  text-align: center;
+  min-height: 60vh;
+}
+
+#sidebar ul li a {
+  text-align: left;
+}
+
+#sidebar.active ul li a {
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+#sidebar.active ul li a i {
+  margin-right: 0;
+  display: block;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+.profile .button_sm,
+.password .button_sm {
+  display: none !important;
+}
+/* Same dropdown links padding*/
+#sidebar.active ul ul a {
+  padding: 10px !important;
+}
+.profile .form-check-input {
+  margin-top: 5px;
+}
+@media only screen and (max-width: 992px) {
+  .notification_content h5 {
+    font-size: 1.2rem;
+  }
+  .notification_content p {
+    font-size: 0.9rem;
+  }
+  .notification img {
+    width: 40% !important;
+    height: 40% !important;
+    padding: 10px;
+    display: flex !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .notification {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #sidebar.active {
+    min-width: 70px;
+    max-width: 70px;
+  }
+  /* Downsize the navigation links font size */
+  #sidebar.active ul li a,
+  .profile,
+  .password {
+    font-size: 0.7em;
+  }
+  .profile .button,
+  .password .button {
+    display: none !important;
+  }
+  .profile .button_sm,
+  .password .button_sm {
+    display: block !important;
+  }
+  .profile .form-check-input {
+    margin-top: 4px;
+  }
+  .profile_title h1 {
+    font-size: x-large;
+  }
+  .profile_title p {
+    font-size: medium;
+  }
+  .profile .form-control,
+  .password .form-control {
+    align-items: center;
+    height: 1.8rem !important;
+    font-size: 1.2em;
+  }
+  #content {
+    padding: 20px 10px;
+  }
+
+  #sidebar.active ul ul a {
+    font-size: 0.75em !important;
+  }
+  #sidebar.active ul li a i {
+    margin-right: 0;
+    display: block;
+    font-size: 1.6em;
+    margin-bottom: 5px;
+  }
+  .mypayment .info_account {
+    border: none !important;
+  }
+}
+@media only screen and (max-width: 485px) {
+  .mypayment {
+    width: 75vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #sidebar.active {
+    min-width: 50px;
+    max-width: 50px;
+  }
+  /* Downsize the navigation links font size */
+
+  .profile,
+  .password {
+    font-size: 0.5em;
+  }
+  .profile_title h1 {
+    font-size: large;
+  }
+  .profile_title p {
+    font-size: x-small;
+  }
+  .profile .form-check-input {
+    margin-top: 3px;
+  }
+  .profile .form-group,
+  .password .form-group {
+    margin-bottom: 20px !important;
+  }
+  .profile .form-control,
+  .password .form-control {
+    height: 1.8rem !important;
+    font-size: 1em;
+  }
+  #sidebar.active ul ul a {
+    font-size: 0.6rem !important;
+  }
+  #sidebar.active ul li a span {
+    font-size: 0.6rem;
+  }
+  #sidebar.active ul li a i {
+    margin-right: 0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 3px;
+  }
+}
